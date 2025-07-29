@@ -1,0 +1,120 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background: url("advanced.pics/Object.png");
+  color: white;
+  height: 990px;  
+}
+
+nav {  
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-right: 20px;
+  gap: 40px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+nav img {
+  padding-left: 140px;
+  margin-top: 40px;
+}
+
+.home-text {
+  position: absolute;
+  top: 250px;
+  left: 385px;
+}
+
+h1 {
+  color: white;
+  font-size: 105px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-text span {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 0 30px;
+}
+
+.span1 {
+  margin-left: 180px;
+}
+
+.home-text button {
+  display: block;
+  background-color: #C171FD;
+  color: white;
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 270px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+.home-H {
+  position: absolute;
+  top: 650px;
+  left: 600px;
+  color: white;
+  font-size: 30px;
+  font-weight: 10px;
+}
+
+.violet {
+  color: #C171FD;
+  font-weight: bold;
+}
+
+.home-pics {
+  display: flex;
+  position: absolute;
+  top: 770px;
+  left: 150px;
+  
+}
+
+.box {
+  flex: 1;
+  text-align: center;  
+}
+
+
+.circle {
+  border-radius: 50%;
+}
+
+.home-title {
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.home-p {
+  color: white;
+  margin-top: 10px;
+  
+}
+
