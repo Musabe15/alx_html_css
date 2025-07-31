@@ -5,7 +5,7 @@ body, html {
 }
 
 header {
-  background: url("advanced.pics/Object.png");
+  background: url("advanced.pics/Object.png");  
   color: white;
   height: 990px;  
 }
@@ -99,6 +99,7 @@ h1 {
 .box {
   flex: 1;
   text-align: center;  
+  
 }
 
 
@@ -115,6 +116,149 @@ h1 {
 .home-p {
   color: white;
   margin-top: 10px;
+  font-style: italic;  
+}
+
+.pink {
+  background-color: #C372FF;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 50px 150px;
+  gap: 60px;
   
 }
 
+.home-pics img {
+  margin-left: 40px;
+}
+
+.pink-text {
+  flex: 2;
+  color: white;
+  margin-left: auto;
+}
+
+.pink-text blockquote {
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.pink-text h3 {
+  line-height: 2;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pink-text p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.white-container {
+  margin-bottom: 50px;
+}
+
+.white-page {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.popular {
+  text-align: center;
+  justify-content: center;
+  padding: 100px;  
+  font-size: 25px;
+}
+
+.popular span {
+  color: #C372FF;
+  font-weight: bold;  
+}
+
+
+.play-icon {
+  position: absolute;
+  top: 1560px;  
+}
+
+.white-page h3 {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding-left: 28px;
+  text-align: left;
+}
+
+.white-page p {
+  color: rgb(123, 118, 118);
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-left: 28px;
+  line-height: 1.5;
+}
+
+.small-pic {
+  display: flex;  
+}
+
+.small-pic img {
+  padding-left: 20px;
+  width: 40px;
+}
+
+.small-pic h4 {
+  font-size: 13px;  
+  margin-left: auto;
+  color: #C372FF;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-right: 150px;
+}
+
+.rating {
+  display: flex;
+  margin-top: 10px;
+}
+
+.rating p {
+  margin-left: auto;
+  color: #C372FF;
+  padding-right: 20px;
+}
+
+.rating img {
+  height: 15px;
+  width: auto;
+  padding-left: 20px;
+}
+
+.member {
+  background-color: #071629;
+  margin-top: 20px;
+}
+
+.member h2 {
+  color: white;
+  padding: 70px;
+}
+
+.member-div {
+  display: flex;
+}
+
+.member button {
+  padding: 100px 0 60px;
+}
+
+.member-div > div > h3 {
+  color: white;
+}
+
+.member-div > div > p {
+  color: white;
+}
