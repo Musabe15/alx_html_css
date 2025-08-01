@@ -58,6 +58,7 @@
 </ol> 
 
 <h2>📧 Contact</h2>
+<a href="https://www.figma.com/proto/E04dOYrxN6pRW2rQKWVCLH/Homepage--Copy-?node-id=3558-0"><p>Figma prototype</p></a>
 <p>Musabe Yvan - yvanzomusa@gmail.com</p>
 <p>Project Link: https://github.com/Musabe15/alx_html_css/tree/main/css_advanced</p>
 
