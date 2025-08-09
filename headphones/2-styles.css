@@ -2,59 +2,81 @@
   --color-primary: #ff5c5c;
   --color-text: #ffffff;
   --color-dark: #001f3f;
-  --font-size-heading: 2.5rem;
-  --font-size-subheading: 1.25rem;
+  --font-size-heading: 1.5rem;
+  --font-size-subheading: 0.8rem;
 }
 
-/* Header section */
+* {
+  box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Sans Pro Light', sans-serif; 
+  overflow-x: hidden;   
+}
+
+/* HEADER SECTION */
 .hero {
   background-image: url('images/headphones_hero_1.jpg');
   background-size: cover;
   background-position: center;
-  color: var(--color-text);
-  padding: 2rem 0;
+  padding: 2rem;
   min-height: 100vh;
-  display: flex;     
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--color-text);
 }
+
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
-}  
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+.h-logo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.h-logo h2 {
+  padding-top: 1rem;
+  font-size: 1rem;
+}
 
 .navbar h1 {
-  font-family: futuri;
+  font-family: 'Futuri', sans-serif;
+  font-size: 1.5rem;
 }
 
-.nav-links a:hover {
-  color: var(--color-primary);
-}
-
-.logo {
-  margin-left: 150px;
-  margin-right: 10px;
-}
-
-.nav-links {
+.nav-links {  
   list-style: none;
   display: flex;
-  gap: 2rem;  
-  margin-left: 550px;
-  padding: 0 10px;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--color-text);
   font-weight: bold;
-  
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
 }
 
 .hero-text {
-  margin-top: 12rem;
-  text-align: center; 
-  margin-left: 100px; 
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 10rem;
+  width: 580px;
+  margin: 0 auto;
 }
 
 .hero-text h1 {
@@ -62,50 +84,65 @@
   margin-bottom: 0.7rem;
 }
 
-.hero-text p {
+.hero-text h2 {
   font-size: var(--font-size-subheading);
   margin-bottom: 2rem;
 }
 
-.btn {
-  background-color: var(--color-primary);
-  color: white;
-  padding: 0.75rem 2rem;
-  border: none;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 3px;
-}
-
 .hero-text .last-p {
-  font-size: 15px;
-  margin-top: 70px;
+  font-size: 0.8rem;
+  margin-top: 2rem;
   line-height: 1.5;
+  opacity: 0.8;
+  padding-top: 2rem;
 }
 
 .hero-text button {
   background-color: var(--color-primary);
-  padding: 10px 30px;
+  padding: 0.75rem 2rem;
   border-radius: 20px;
   border: none;
+  text-transform: uppercase;
   color: var(--color-text);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .hero-text button:hover {
   opacity: 0.9;
 }
 
-/* What we do section */
+/* WHAT WE DO SECTION */
 .what-we-do {
   text-align: center;
-  justify-content: center;
-  padding: 70px 0;
+  justify-content: center; 
+  min-height: 90vh; 
+}
+
+.section-title {
+  margin-top: 3rem;
+  font-size: var(--font-size-heading);
+  padding: 3rem 0 1rem;
+}
+
+.section-subtitle {  
+  padding: 0 2rem 4rem;
+  width: 579px;
+  margin: 0 auto;
 }
 
 .features {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   align-items: center;
   justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.feature a {
+  color: var(--color-primary);
+  font-size: 70px;
+  text-decoration: none;
 }
 
 .feature {
@@ -124,41 +161,37 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+  min-height: 100vh;
   color: var(--color-text);
-  text-align: center;
-  padding: 4rem 0;
+  text-align: center;  
+  background-color: var(--color-dark);
 }
 
 .our-results .section-title {
-  font-size: 1.8rem;
-  margin: 5rem auto 1.5rem;
+  font-size: var(--font-size-heading);
+  padding: 9rem 0 2rem;
 }
 
 .our-results .section-subtitle {
   font-size: 1rem;
-  max-width: 600px;
-  margin: 3rem auto 0 auto;
-  color: #ccc;
+  width: 700px;
+  margin: 0 auto;  
   line-height: 1.5;
 }
 
 .our-results .container {
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .results-grid {
-  display: flex;  
+  display: grid;  
+  grid-template-columns: auto auto auto auto;
   align-items: center;
   justify-content: center;
   gap: 120px;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
-.result-item {
-  flex: 1;  
-  max-width: 170px;
-}
 
 .result-item img {
   width: 150px;
@@ -166,21 +199,125 @@
 
 .hex-h {
   position: absolute;
-  top: 1570px;
-  margin-left: 50px;
+  top: 1740px;
+  margin-left: 40px;
   font-weight: bold;
+  font-size: 2em;
 }
 
 .hex-p {
   position: absolute;
-  top: 1630px;
+  top: 1789px;
   font-size: 13px;
-  margin-left: 30px;
+  margin-left: 24px;
 }
 
-@media (min-width: 768px) {
-  .results-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+/* RESPONSIVE MEDIA QUERIES */
+@media (min-width: 480px) and (max-width: 768px) {
+  .nav-links {
+    gap: 0.7rem;
   }
+
+  .hero-text {
+    padding-top: 12rem;
+    width: 400px;
+  }
+
+  .hero-text button {
+    margin: 0.5rem 0 1.5rem;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 0.65rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 0.65rem;
+  }
+
+  .hero-text .last-p {
+  font-size: 0.8rem;
+  margin-top: 0;
+  line-height: 1.5;
+  opacity: 0.8;  
+}
+
+  /* WHAT WE DO SECTION */
+  .features {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.section-subtitle {
+  width: 500px;
+}
+
+/* OUR RESULT */
+.results-grid {
+  display: grid;  
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.our-results .section-subtitle {
+  font-size: 0.9rem;
+  width: 500px;  
+}
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    visibility: hidden;
+  }
+
+  .hero-text {
+    margin-top: 3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text h2 {
+    font-size: 0.9rem;
+  }
+
+  .hero-text button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* WHAT WE DO SECTION */
+  .features {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+/* OUR RESULT */
+.results-grid {
+  display: grid;  
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;  
+}
+.our-results .section-subtitle {
+  font-size: 0.5rem;
+  width: 500px;  
+}
 }
