@@ -6,57 +6,75 @@
   --font-size-subheading: 1.25rem;
 }
 
-body {
-  font-family: 'Sans Pro Light', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Sans Pro Light', sans-serif;
+  background-color: var(--color-dark);
+  color: var(--color-text);
+}
+
+/* HERO SECTION */
 .hero {
   background-image: url('images/headphones_hero_1.jpg');
   background-size: cover;
   background-position: center;
-  color: var(--color-text);
-  padding: 2rem 0;
+  padding: 2rem;
   min-height: 100vh;
-  display: flex;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
-}  
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+.h-logo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.h-logo h2 {
+  padding-top: 1rem;
+}
 
 .navbar h1 {
-  font-family: futuri;
-}
-
-.nav-links a:hover {
-  color: var(--color-primary);
-}
-
-.logo {
-  margin-left: 150px;
-  margin-right: 10px;
+  font-family: 'Futuri', sans-serif;
+  font-size: 1.5rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;  
-  margin-left: 550px;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--color-text);
   font-weight: bold;
-  
 }
 
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+/* HERO TEXT */
 .hero-text {
-  margin-top: 12rem;
-  text-align: center; 
-  margin-left: 100px; 
+  text-align: center;
+  margin-top: 5rem;
+  padding: 0 1rem;
 }
 
 .hero-text h1 {
@@ -69,34 +87,74 @@ body {
   margin-bottom: 2rem;
 }
 
-.btn {
-  background-color: var(--color-primary);
-  color: white;
-  padding: 0.75rem 2rem;
-  border: none;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 3px;
-}
-
 .hero-text .last-p {
-  font-size: 13px;
-  margin-top: 70px;
+  font-size: 0.8rem;
+  margin-top: 2rem;
   line-height: 1.5;
   opacity: 0.8;
 }
 
 .hero-text button {
   background-color: var(--color-primary);
-  padding: 14px 28px;
+  padding: 0.75rem 2rem;
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
   color: var(--color-text);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .hero-text button:hover {
   opacity: 0.9;
 }
 
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 0.7rem;
+  }
 
+  .hero-text {
+    padding-top: 5rem;
+  }
+
+  .hero-text button {
+    margin: 0.5rem 0 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.65rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    visibility: hidden;
+  }
+
+  .hero-text {
+    margin-top: 3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text h2 {
+    font-size: 0.9rem;
+  }
+
+  .hero-text button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
+}
