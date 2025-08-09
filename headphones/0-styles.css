@@ -6,6 +6,9 @@
   --font-size-subheading: 1.25rem;
 }
 
+body {
+  font-family: 'Sans Pro Light', sans-serif;
+}
 
 .hero {
   background-image: url('images/headphones_hero_1.jpg');
@@ -61,7 +64,7 @@
   margin-bottom: 0.7rem;
 }
 
-.hero-text p {
+.hero-text h2 {
   font-size: var(--font-size-subheading);
   margin-bottom: 2rem;
 }
@@ -77,19 +80,23 @@
 }
 
 .hero-text .last-p {
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 70px;
   line-height: 1.5;
+  opacity: 0.8;
 }
 
 .hero-text button {
   background-color: var(--color-primary);
-  padding: 10px 30px;
+  padding: 14px 28px;
   border-radius: 20px;
   border: none;
+  text-transform: uppercase;
   color: var(--color-text);
 }
 
 .hero-text button:hover {
   opacity: 0.9;
 }
+
+
