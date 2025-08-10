@@ -199,7 +199,7 @@ body {
 
 .hex-h {
   position: absolute;
-  top: 1740px;
+  top: 1660px;
   margin-left: 40px;
   font-weight: bold;
   font-size: 2em;
@@ -207,7 +207,7 @@ body {
 
 .hex-p {
   position: absolute;
-  top: 1789px;
+  top: 1710px;
   font-size: 13px;
   margin-left: 24px;
 }
@@ -270,10 +270,20 @@ body {
   align-items: center;
   justify-content: center;
   gap: 50px;
+  padding-bottom: 3rem;
 }
 .our-results .section-subtitle {
   font-size: 0.9rem;
   width: 500px;  
+}
+.hex-h {
+  position: absolute;
+  top: 1830px;  
+}
+
+.hex-p {
+  position: absolute;
+  top: 1880px;  
 }
 }
 
@@ -321,3 +331,5 @@ body {
   width: 500px;  
 }
 }
+
+
